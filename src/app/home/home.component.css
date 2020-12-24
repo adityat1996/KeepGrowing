@@ -1,0 +1,23 @@
+/* mat-toolbar {
+    height: 4vh;
+} */
+
+mat-card {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content:center;
+    text-align: left;
+    border: 0.5px solid rgb(165, 164, 164,0.5);
+    margin: 0.2%;
+    height: 18vh;
+}
+
+#homeStatic {
+    max-width: 100%;
+}
+/* 
+img {
+    height: 67.6vh;
+    width: 25vw;
+} */

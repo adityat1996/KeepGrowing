@@ -1,0 +1,43 @@
+<div class="main-container">
+    <!-- <mat-toolbar color="info" fxLayout="row" fxLayoutAlign="space-evenly center">
+    <a [routerLink]="['/healthSection']" routerLinkActive="active">HEALTH</a>
+    <a [routerLink]="['/groomingSection']" routerLinkActive="active">GROOMING</a>
+    <a [routerLink]="['/gymSection']" routerLinkActive="active">GYM</a>
+    <a [routerLink]="['/travel']" routerLinkActive="active">TRAVEL</a>
+    <a [routerLink]="['/knowledgeSection']" routerLinkActive="active">KNOWLEDGE</a>
+    </mat-toolbar> -->
+    <div fxLayout="row" fxLayoutAlign="space-evenly center">
+       <div fxFlex="50"><mat-card><app-knowledge></app-knowledge></mat-card></div>
+   <div fxFlex="40"><mat-card><app-motivational></app-motivational></mat-card></div>
+   <div fxFlex="10">
+    <mat-card> 
+         <mat-card-content>
+            <a [routerLink]="['/knowledgeSection']" routerLinkActive="active">Knowledge</a><br>
+            <a [routerLink]="['/groomingSection']" routerLinkActive="active">Grooming</a><br>
+            <a [routerLink]="['/healthSection']" routerLinkActive="active">Health</a>&nbsp;&nbsp;
+            <a [routerLink]="['/gymSection']" routerLinkActive="active">Gym</a><br>
+            <a [routerLink]="['/travel']" routerLinkActive="active">Travel</a>&nbsp;&nbsp;
+            <a [routerLink]="['/tips']" routerLinkActive="active">Tips</a><br>
+            <a [routerLink]="['/watchDaily']" routerLinkActive="active">Watch Daily</a><br>
+            <a [routerLink]="['/goal']" routerLinkActive="active">Goal</a>&nbsp;&nbsp;
+            <a [routerLink]="['/lessons']" routerLinkActive="active">Lessons</a><br>
+            <a [routerLink]="['/see']" routerLinkActive="active">See</a>&nbsp;&nbsp;
+            <a [routerLink]="['/mo']" routerLinkActive="active">MO</a><br>
+            <a [routerLink]="['/other']" routerLinkActive="active">Other</a>&nbsp;
+            <a [routerLink]="['/sketches']" routerLinkActive="active">Sketches</a>
+         </mat-card-content>
+    </mat-card>
+   </div>
+</div>
+ <div>
+    <ng-image-slider [images]="imageObject" #nav></ng-image-slider>
+    <!-- <img src="../../assets/images/homeImages/"> -->
+ </div>
+ <div>
+   <app-thought></app-thought>
+   <app-health></app-health>
+   <app-motivationalphotos></app-motivationalphotos>
+   <app-personal-imp></app-personal-imp>
+   <!--<mat-card><app-thought></app-thought></mat-card>-->
+   <!--<img src={{imgSrcPath}} style='height: 235px;width: 220px'>-->
+ </div>
