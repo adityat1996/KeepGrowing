@@ -37,10 +37,12 @@ export class HomeComponent implements OnInit {
     "FB_IMG_1461639726690.jpg"
   ]
 
+  //image: '../../assets/images/homeImages/naturalDoctors.png',
+  //thumbImage: '../../assets/images/homeImages/naturalDoctors.png',
   imageObject: Array<object> = [
     {
-      image: '../../assets/images/homeImages/naturalDoctors.png',
-      thumbImage: '../../assets/images/homeImages/naturalDoctors.png',
+      image: 'assets/images/homeImages/naturalDoctors.png',
+      thumbImage: 'assets/images/homeImages/naturalDoctors.png',
     }, {
       image: '../../assets/images/homeImages/eatingTime.png',
       thumbImage: '../../assets/images/homeImages/eatingTime.png'
