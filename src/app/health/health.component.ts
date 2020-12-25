@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HealthComponent implements OnInit {
 
-  basePath: string = "../../assets/images/Health/";
+  basePath: string = "assets/images/Health/";
   imgSrc: string = "";
   randomNumber: number = 0;
 

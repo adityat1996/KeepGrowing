@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PersonalImpComponent implements OnInit {
 
-  basePath: string = "../../assets/images/perosnalImprovization/";
+  basePath: string = "assets/images/perosnalImprovization/";
   imgSrc: string = "";
   randomNumber: number = 0;
 

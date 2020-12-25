@@ -20,11 +20,11 @@ export class MotivationalphotosComponent implements OnInit {
   ngOnInit() {
     const setInterval = window['__zone_symbol__setInterval'];
     setInterval(() => {
-      this.randomNumber = Math.floor(Math.random() * (151 - 1) + 1) ; 
+      this.randomNumber = Math.floor(Math.random() * (151 - 1) + 1);
       this.imgSrc = this.basePath + this.MOArray[this.randomNumber];
       this._ref.detectChanges();
-    },60000);
-   
+    }, 60000);
+
   }
 
   MOArray: Array<string> = [
@@ -178,7 +178,7 @@ export class MotivationalphotosComponent implements OnInit {
     "quote 1.jpg",
     "Quote.jpg",
     "though 1.jpg",
-    "though 2.jpg"    
+    "though 2.jpg"
   ]
 
 

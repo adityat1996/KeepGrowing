@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ThoughtComponent implements OnInit {
 
-  basePath: string = "../../assets/images/thoughts/";
+  basePath: string = "assets/images/thoughts/";
   imgSrc: string = "";
   randomNumber: number = 0;
 
@@ -17,7 +17,7 @@ export class ThoughtComponent implements OnInit {
   ngOnInit() {
     const setInterval = window['__zone_symbol__setInterval'];
     setInterval(() => {
-      this.randomNumber = Math.floor(Math.random() * (45- 1) + 1);
+      this.randomNumber = Math.floor(Math.random() * (45 - 1) + 1);
       this.imgSrc = this.basePath + this.thoughtArray[this.randomNumber];
       this._ref.detectChanges();
     }, 60000);

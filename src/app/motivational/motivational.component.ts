@@ -8,21 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MotivationalComponent implements OnInit {
 
-  moQuote : string = "";
+  moQuote: string = "";
   randomNumber: number = 0;
   constructor(private _ref: ChangeDetectorRef) { }
 
   ngOnInit() {
     const setInterval = window['__zone_symbol__setInterval'];
     setInterval(() => {
-      this.randomNumber = Math.floor(Math.random() * (161 - 1) + 1) ; 
+      this.randomNumber = Math.floor(Math.random() * (161 - 1) + 1);
       this.moQuote = this.moArray[this.randomNumber].toUpperCase();
       this._ref.detectChanges();
-    },60000);
-    
+    }, 60000);
+
   }
 
-  moArray : Array<String> = [
+  moArray: Array<String> = [
     "Take every chance in your life because some things happen only once.",
     "Don't be pushed around by the fears in your mind. Be led by the dreams in your heart.",
     "Before going to sleep every night forgive everyone and sleep with a clean heart.",
