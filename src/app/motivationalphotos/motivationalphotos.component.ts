@@ -9,7 +9,8 @@ import { MatDialog } from '@angular/material';
 })
 export class MotivationalphotosComponent implements OnInit {
 
-  basePath: string = "../../assets/images/MO/";
+  //basePath: string = "../../assets/images/MO/";
+  basePath: string = "assets/images/MO/";
   imgSrc: string = "";
   randomNumber: number = 0;
   // imgPathToDialog : string ="";
